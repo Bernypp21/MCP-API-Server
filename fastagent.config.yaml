@@ -1,0 +1,13 @@
+mcp:
+  servers:
+    url:
+      command: "python"
+      args: ["url_mcp_server.py","stdio"]
+      env:
+        VIRUSTOTAL_API_KEY: "${VIRUSTOTAL_API_KEY}"
+    webcam:
+      command: "python"
+      args: ["webcam_mcp_server.py","stdio"]
+      env:
+        WINDY_API_KEY: "${WINDY_API_KEY}"
+        IPSTACK_API_KEY: "${IPSTACK_API_KEY}"
